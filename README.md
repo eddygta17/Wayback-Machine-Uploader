@@ -8,9 +8,10 @@ I was trying to access OpenCircuitDesign, a site managed by Tim Edwards. He went
 ### Usage
 
 Steps for using the tool
-> git clone 
-> cd Wayback
-> chmod 777 ./WayBackMachineUploader.sh
+git clone https://github.com/eddygta17/Wayback-Machine-Uploader.git
+cd Wayback-Machine-Uploader
+chmod 77 ./WaybackMachineUploader.sh
+./WaybackMachineUploader.sh
 
 
 
