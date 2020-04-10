@@ -19,4 +19,4 @@ chmod 77 ./WaybackMachineUploader.sh
 
 1. Change .html to .php or to any other extension to inculde that file.
 2. Change -name "*.html" to -type f to include all files.
-
+3. Use -m option in wget instead of -r to mirror the entire website (slower and takes more space).
