@@ -1,20 +1,21 @@
-# SaveThisPage
-Script for saving and archiving webpages
+# Wayback Machine Uploader
+Script for saving and archiving webpages using wayback machine. The WaybackMachine does not allow to submit an entire website for archiving. This is a workaround for saving a website intended to be a wayback machine uploader.
 
-The Wayback Machine doesn't offer a way to submit an entire site, only a single page as you've already found. This is touc
+### Inspiration
+I was trying to access OpenCircuitDesign, a site managed by Tim Edwards. He went on vacation and the site went down. I had to access the website using Wayback Machine but it was poorly archived. Also I tried to archive my own website but it was cumbersome to do it manually page by page.
 
-Since Wayback Machine doesn't provide such feature, I've found some workaround.
 
-First, mirror the website using wget, e.g.
+### Usage
 
-wget -m https://example.com/
-Then use curl to archive all pages one by one that you've downloaded.
-
-find . -name "*.html" -exec curl -v "https://web.archive.org/save/https://{}" ';'
-Note: You can change .html to .php, or include certain type of files.
-
+Steps for using the tool
+> git clone 
+> cd Wayback
+> chmod 777 ./WayBackMachineUploader.sh
 
 
 
-You can change -name "*.html" to -type f to include all files
-find . -type f -exec curl -v "https://web.archive.org/save/https://{}" ';'
+#### Tips
+
+1. Change .html to .php or to any other extension to inculde that file.
+2. Change -name "*.html" to -type f to include all files.
+
